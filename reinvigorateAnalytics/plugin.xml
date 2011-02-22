@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.asfusion.mango.plugins.reinvigorateAnalytics" name="Reinvigorate Analytics" version="1.0" provider-name="AndyJarrett" class="reinvigorateAnalytics.Handler">
+<description><![CDATA[ Adds <a href="http://www.reinvigorate.com/analytics/">reinvigorate Analytics</a> support ]]></description>
+<requiresVersion match="greaterOrEqual">1.2</requiresVersion>
+  <listens>
+	<event name="beforeHtmlBodyEnd" type="synch" priority="5" />
+  </listens>
+  
+  <listensAdmin>
+  	<event name="settingsNav" type="synch" priority="5" />
+  	<event name="showreinvigorateAnalyticsSettings" type="synch" priority="5" />
+  	<event name="dashboardPod" type="synch" priority="5" />
+  </listensAdmin>
+</plugin>
